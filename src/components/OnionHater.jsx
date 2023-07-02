@@ -6,11 +6,12 @@ function OnionHater() {
 
   const handleChange = (event) => {
     setText(event.target.value);
-
-    if (event.target.value.includes('cebolla')) {
-      alert('ODIO LA CEBOLLA');
-    }
-  };
+      if (event.target.value.includes('cebolla')) {
+        setTimeout(() => {
+          alert('ODIO LA CEBOLLA')
+        }, 2000)
+      }
+    };
 
   return (
     <div>
